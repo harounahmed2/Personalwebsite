@@ -1,1 +1,1 @@
-web: gunicorn whome.py --log-file -
+web: gunicorn harounpersonalwebsite.wsgi --log-file -
