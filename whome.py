@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import os
+import sys
 app = Flask(__name__)
 
 @app.route('/')
@@ -9,6 +10,11 @@ def homepage():
     return render_template('index.html', author=author, name=name)
 
 
-port = os.getenv('PORT', '5000')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(port))
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gettingstarted.settings")
+
+    from django.core.management import execute_from_command_line
+
+    execute_from_command_line(sys.argv)
