@@ -1,1 +1,1 @@
-web: gunicorn whome.py run_gununicorn
+web: gunicorn gettingstarted.wsgi --log-file -
