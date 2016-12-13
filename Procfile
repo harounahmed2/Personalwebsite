@@ -1,1 +1,1 @@
-web: gunicorn app:whome
+web: gunicorn whome.py run_gununicorn
