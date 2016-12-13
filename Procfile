@@ -1,1 +1,1 @@
-web: gunicorn harounpersonalwebsite.wsgi --log-file -
+web: gunicorn app:whome
