@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def homepage():
     author = "HFiasco"
-    name = "Big Nick Magnuson"
+    name = "Kyle Souders"
     return render_template('index.html', author=author, name=name)
 
 
