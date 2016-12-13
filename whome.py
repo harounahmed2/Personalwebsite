@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 import os
 import sys
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -13,9 +14,3 @@ def homepage():
 
 if __name__ == '__main__':
     app.run()
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gettingstarted.settings")
-
-    from django.core.management import execute_from_command_line
-
-    execute_from_command_line(sys.argv)
-print 'Change Test 2'
