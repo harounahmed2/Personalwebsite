@@ -1,1 +1,1 @@
-web: python dealscraper/whome.py
+web: gunicorn whome:app
