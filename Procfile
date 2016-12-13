@@ -1,1 +1,1 @@
-web: gunicorn harounpersonalwebsite:app
+web: python dealscraper/whome.py
