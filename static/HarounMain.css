@@ -222,7 +222,7 @@ body {
 /*************************** This box is where CSS can be changed from page to page *******************************/
 
 #ProjectsBackground {
-  background: url('/static/images/Projects.jpg') no-repeat center center fixed; /* The image can be changed... */
+  background: url('/static/images/Hoosgif.gif') no-repeat center center fixed; /* The image can be changed... */
   background-position: 0px -200px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -274,6 +274,12 @@ body {
 
 .page-subtitleMain {
   font-size:250%;
+}
+
+.Construction{
+  font-size:500%;
+  font-weight:bolder;
+  color:black;
 }
 
 .block {
