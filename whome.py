@@ -12,7 +12,15 @@ def homepage():
     name = "Kyle Souders"
     return render_template('homepage.html', author=author, name=name)
 
+@app.errorhandler(404)
+def page_not_found(e):
+    """Custom 404 Page."""
+    return render_template('404.html'), 404
 
+@app.errorhandler(500)
+def page_not_found(e):
+    """Custom 500 Page."""
+    return render_template('500Error.html'), 500
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))

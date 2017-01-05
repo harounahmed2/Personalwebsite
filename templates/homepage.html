@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html>
+
+<html lang = "en">
 
 <head>
 
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/> <!-- this is responsible for Gautam's top right side of the top bar being aligned as such -->
+    <!--instantiate bootstrap css for formatting and general presentation> -->
+  <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css"/>
 
-  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
-  <!--  <link rel="stylesheet" type="text/css" href="/static/font-awesome/css/font-awesome.min.css"/> -->
+
+
+  <!-- Responsible for the floating icons  and all "clip art" like visuals on the main page- large icon library. Imports outside holographics seen in the filepath detailed to the left -->
+    <link rel="stylesheet" type="text/css" href="/static/font-awesome/css/font-awesome.min.css"/>
+
+
+<!-- Responsible for the Javacript, which includes items such as the drop down bar, through instantiating Jquery and bootstrap min javascript package, which must be done in this order -->
+    <script src="/static/scripts/jquery-1.10.2.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Ubuntu|Lobster|Playfair+Display+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/static/HarounMain.css"/>
@@ -19,6 +29,8 @@
 
     <title>{{ author }}'s app</title>
     <link rel="shortcut icon" href="static/images/WebsiteProfile.ico">
+
+    <!-- Script for Google Analytics for Website Monitoring -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -32,9 +44,9 @@
 
 </head>
 
-  <body>
+<body>
     <!-- Code for the Header  ***Do Not Touch*** -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation"> <!-- "navbar-fixed-top" comes from the boostrap.css min under content, creates special type of dropdown-menu- experiment further TODO -->
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,16 +55,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand name-title" href="/" color="#FFFFFF"> <b> Haroun Ahmed <i class="fa fa-child fa-lg"></i> </b>
+                <a class="navbar-brand name-title" href="/" color="#FFFFFF"> <b>Haroun Ahmed &nbsp; <i class="fa fa-thumbs-up fa-lg"></i></b>
                 </a>
             </div>
 
             <div class="text-container">
                 <div class="navbar-collapse collapse navbar-responsive-collapse nav-bar-menu">
 
-                    <ul class="nav navbar-nav pull-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me<b class="caret"></b></a>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"> <!-- dropdown button functionality requires javascript bootstrap plugin (seen in scripts) -->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me<span class="caret"></span></a>
                             <ul class="dropdown-menu drop-down-items">
                                 <li><a href="https://github.com/harounahmed2">GitHub</a></li>
                                 <li><a href="http://www.linkedin.com/in/haroun-ahmed">LinkedIn</a></li>
@@ -64,9 +76,13 @@
                             </ul>
                         </li>
 
+
+
                         <li>
-                            <a href="#ProjectsPage">Projects </a>
+                            <a href="#ProjectsPage">Projects</a>
                         </li>
+
+
 
                         <li>
                             <a href="#PublicationsPage">Publications</a>
@@ -81,17 +97,43 @@
                 </div>
             </div>
         </div>
-    </div>
+  </div>
     <!-- End the Header Bar -->
 
 
-    <h2>It's all about the SQAW and the HOOS {{ name }}!</h2>
-    <h3> Thanks a bunch for the inspiration Gohum </h3>
-    <div class="Construction"> Please pardon the appearance, website currently under construction! - Haroun </div>
-  <!--  <img src="/static/images/Iceland.jpg" /> -->
+
+    <!--  <img src="/static/images/Iceland.jpg" /> -->
+
+  <div class = "container">
+    <br><br><br><br>
+      <div class="row-fluid page-titleMain cursive-font">
+        <p class="text-center"><u><strong>Haroun Ahmed</strong></u></p>
+      </div>
+  </div>
 
 
-  </body>
+  <div class = "container">
+    <div class="row-fluid">
+      <div class="text-center icon-active-highlight"> <!-- creates all the links and icons taken from font-awesome- call specific icon using fa fa-*** and then size with last #x -->
+        <a href="http://www.linkedin.com/in/haroun-ahmed" class = "link-icons center-icon1">
+          <i class="fa fa-linkedin-square fa-5x"></i></a> &nbsp; &nbsp; &nbsp; &nbsp; <!-- nbsp just refers to creating spaces between icons -->
+        <a href = "https://github.com/harounahmed2" class = "link-icons center-icon2">
+          <i class = "fa fa-github-square fa-5x"></i></a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="resume" class="link-icons center-icon3" target="_newtab"><i class="fa fa-file-text fa-5x"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class = "container">
+    <div class = "row-fluid page-subtitleMain cursive-font">
+      <p class="text-center"><strong>Cognitive Solutions Consultant, IBM Watson Group</strong></p>
+    </div>
+
+  <h2>It's all about the SQAW and the HOOS {{ name }}!</h2>
+  <h3> Thanks a bunch for the inspiration Gohum </h3>
+  <div class="Construction"> Please pardon the appearance, website currently under construction! - Haroun </div>
+
+</body>
 
 
 </html>

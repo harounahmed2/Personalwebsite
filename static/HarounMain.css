@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background: url('/static/images/Iceland.jpg') no-repeat center center fixed; /* The image can be changed... */
+  background: url('/static/images/Iceland4.jpg') no-repeat center center fixed; /* The image can be changed... */
   background-position: 0px 45px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -277,7 +277,7 @@ body {
 }
 
 .Construction{
-  font-size:500%;
+  font-size:300%;
   font-weight:bolder;
   color:black;
 }
