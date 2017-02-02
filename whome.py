@@ -22,6 +22,10 @@ def page_not_found(e):
     """Custom 500 Page."""
     return render_template('500Error.html'), 500
 
+@app.route('/resume')
+def resumemethod():
+    return redirect('as')
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)

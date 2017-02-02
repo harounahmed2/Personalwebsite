@@ -40,35 +40,37 @@ body {
 
 
 /*CSS for the white box that holds most of the content */
-#page-content {
-  background-color: #ffffff;
+#body-section {
+  background-color: #E0F7FA;
   height: auto;
   font-family: 'Ubuntu', sans-serif;
   font-size: 150%;
+  border: 1px solid gray;
+
 }
 
-#page-content p {
+#body-section p {
   color: #000000;
 }
 
-#page-content p a {
+#body-section p a {
   color: #809aa2;
 }
 
-#page-content p a:active {
+#body-section p a:active {
   color: #809aa2;
 }
 
-#page-content p a:hover {
+#body-section p a:hover {
   color: #809aa2;
 }
 
-#page-content p a:link {
-  color: #809aa2;
+#body-section p a:link {
+  color: #008eff;
 }
 
-#page-content p a:visited {
-  color: #809aa2;
+#body-section p a:visited {
+  color: #de00ff;
 }
 /* End Page Content CSS */
 
@@ -203,7 +205,7 @@ body {
 
 /* CSS for the three link icons on the homepage */
 .link-icons {
-  color: #809aa2;
+  color: black;
 }
 
 .link-iconsNotMain {
@@ -211,11 +213,11 @@ body {
 }
 
 .icon-active-highlight a:hover {
-  color: #000000;
+  color: white;
 }
 
 .icon-active-highlight a:active {
-  color: #000000;
+  color: white;
 }
 /* End of icon CSS */
 
@@ -258,7 +260,7 @@ body {
 }
 
 .smaller-font {
-  font-size:65%;
+  font-size:64%;
 }
 .page-title {
   font-size:4em;
@@ -270,16 +272,19 @@ body {
 
 .page-titleMain {
   font-size:4em;
+  color:white;
 }
 
 .page-subtitleMain {
-  font-size:250%;
+  font-size:200%;
+  color:white;
+  font-weight: bold;
 }
 
 .Construction{
   font-size:300%;
   font-weight:bolder;
-  color:black;
+  color:white;
 }
 
 .block {

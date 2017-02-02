@@ -41,6 +41,17 @@
       ga('send', 'pageview');
 
     </script>
+    <script>
+      $(document).ready(function() {
+      	$('#slideshow').cycle({
+      	fx: 'fade',
+      	pager: '#smallnav',
+      	pause:   1,
+      	speed: 1800,
+      	timeout:  3500
+      	});
+      });
+  </script> <!-- Trying rotating background file images as per dynamic websites-->
 
 </head>
 
@@ -55,7 +66,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand name-title" href="/" color="#FFFFFF"> <b>Haroun Ahmed &nbsp; <i class="fa fa-thumbs-up fa-lg"></i></b>
+                <a class="navbar-brand name-title" href="/" color="#FFFFFF"> <b>Haroun Ahmed &nbsp; <i class="fa fa-hand-peace-o fa-lg" aria-hidden="true"></i></b>
                 </a>
             </div>
 
@@ -66,8 +77,11 @@
                         <li class="dropdown"> <!-- dropdown button functionality requires javascript bootstrap plugin (seen in scripts) -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me<span class="caret"></span></a>
                             <ul class="dropdown-menu drop-down-items">
-                                <li><a href="https://github.com/harounahmed2">GitHub</a></li>
                                 <li><a href="http://www.linkedin.com/in/haroun-ahmed">LinkedIn</a></li>
+                                <li><a href="https://github.com/harounahmed2">Github</a></li>
+                                <li><a href="https://www.facebook.com/haroun.ahmed.5">Facebook</a><li>
+                                <li><a href="https://medium.com/@harounahmed">Personal Blog</a></li>
+                                <li class = "divider"></li>
                                 <li><a href="resume" target="_newtab">Resume</a></li>
                                 <li class="divider"></li>
                                 <li><a href="#AboutMePage">About Haroun</a></li>
@@ -89,7 +103,7 @@
                         </li>
 
                         <li>
-                            <a href="mailto:harounahmed2@gmail.com?Subject=Website%20Hello"> Contact </a>
+                            <a href="mailto:harounahmed2@gmail.com?Subject=Website%20Hello">Contact</a>
                         </li>
                     </ul>
 
@@ -119,19 +133,58 @@
           <i class="fa fa-linkedin-square fa-5x"></i></a> &nbsp; &nbsp; &nbsp; &nbsp; <!-- nbsp just refers to creating spaces between icons -->
         <a href = "https://github.com/harounahmed2" class = "link-icons center-icon2">
           <i class = "fa fa-github-square fa-5x"></i></a> &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="resume" class="link-icons center-icon3" target="_newtab"><i class="fa fa-file-text fa-5x"></i></a>
+        <a href="https://www.facebook.com/haroun.ahmed.5" class= "link-icons center-icon3">
+          <i class="fa fa-facebook-square fa-5x"></i></a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="https://medium.com/@harounahmed" class = "link-icons center-icon4">
+          <i class = "fa fa-medium fa-5x" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="resume" class="link-icons center-icon5" target="_newtab"><i class="fa fa-file-text fa-5x"></i></a> &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="mailto:harounahmed2@gmail.com?Subject=Website%20Hello" class="link-icons center-icon6">
+          <i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a> &nbsp; &nbsp; &nbsp; &nbsp;
       </div>
     </div>
+    <br>
   </div>
 
+
   <div class = "container">
-    <div class = "row-fluid page-subtitleMain cursive-font">
+    <div class = "row-fluid page-subtitleMain">
       <p class="text-center"><strong>Cognitive Solutions Consultant, IBM Watson Group</strong></p>
     </div>
 
-  <h2>It's all about the SQAW and the HOOS {{ name }}!</h2>
-  <h3> Thanks a bunch for the inspiration Gohum </h3>
+  <div id="body-section">
+    <div class="container">
+      <p class="text-center fancy-font">
+        <strong>Insert inspirational quote here</strong>
+      </p>
+      <br>
+
+      <p class="text-center fancy-font">
+        <strong>- Hoo actually said quote mentioned above</strong>
+      </p>
+    <br><br>
+
+    <p>Introductory Paragraph to both website and myself</p>
+    <br>
+
+    <p class="smaller-font">
+      ***If you would like to design a similar website, or are curious about the specific methods that I used, I recommend going to the <a href="AboutSitePage">how this website was made</a> page.
+      If any further questions exist, feel free to <a href="mailto:harounahmed2@gmail.com?Subject=Website%20Help">send me an email</a> anytime! I would be more than happy to discuss/help in anyway that I can!
+    </p>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!--<h2>It's all about the SQAW and the HOOS {{ name }}!</h2>
+  <h3> Thanks a bunch for the inspiration Gohum </h3> -->
   <div class="Construction"> Please pardon the appearance, website currently under construction! - Haroun </div>
+
+
 
 </body>
 
