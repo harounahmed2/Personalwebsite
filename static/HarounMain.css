@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background: url('/static/images/Sunset.jpg') no-repeat center center fixed; /* The image can be changed... */
+  background: url('/static/images/SunSet.jpg') no-repeat center center fixed; /* The image can be changed... */
   background-position: 0px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
