@@ -11,7 +11,7 @@ MarkupSafe==0.23
 oauthlib==1.1.2
 pysolr==3.5.0
 python-dateutil==1.5
-PyYAML==3.12
+PyYAML==5.1
 requests==2.11.1
 requests-oauthlib==0.6.2
 six==1.10.0
