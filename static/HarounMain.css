@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  background: url('/static/images/Iceland4.jpg') no-repeat center center fixed; /* The image can be changed... */
-  background-position: 0px 45px;
+  background: url('/static/images/SunSet.jpg') no-repeat center center fixed; /* The image can be changed... */
+  background-position: 0px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -44,7 +44,7 @@ body {
   background-color: #E0F7FA;
   height: auto;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 150%;
+  font-size: 130%;
   border: 1px solid gray;
 
 }
@@ -223,7 +223,7 @@ body {
 
 /*************************** This box is where CSS can be changed from page to page *******************************/
 
-#ProjectsBackground {
+#Projects{
   background: url('/static/images/Hoosgif.gif') no-repeat center center fixed; /* The image can be changed... */
   background-position: 0px -200px;
   -webkit-background-size: cover;
@@ -284,7 +284,7 @@ body {
 .Construction{
   font-size:300%;
   font-weight:bolder;
-  color:white;
+  color:black;
 }
 
 .block {

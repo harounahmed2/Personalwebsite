@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/homepage')
 def homepage():
-    author = "HFiasco"
+    author = "Haroun Ahmed"
     name = "Kyle Souders"
     return render_template('homepage.html', author=author, name=name)
 
@@ -24,7 +24,7 @@ def page_not_found(e):
 
 @app.route('/resume')
 def resumemethod():
-    return redirect('as')
+    return redirect('https://drive.google.com/file/d/11attAO0zFnPnBaDyT1nHgSAUIr7ULuLY/view?usp=sharing', code=302)
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
