@@ -21,5 +21,5 @@ Werkzeug==0.15.3
 xmltodict==0.10.2
 gunicorn==19.6.0
 whitenoise==2.0.6
-Django==1.11.28
+Django==2.2.24
 dj-database-url==0.4.1
