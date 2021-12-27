@@ -27,3 +27,9 @@
 #whitenoise>=2.0.6
 #Django>=1.11.28
 #dj-database-url>=0.4.1
+
+setuptools
+wheel
+Flask
+gunicorn
+Django
