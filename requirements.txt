@@ -1,3 +1,5 @@
+setuptools
+wheel
 Beaker>=1.8.0
 click>=6.6
 Flask>=1.0.0
